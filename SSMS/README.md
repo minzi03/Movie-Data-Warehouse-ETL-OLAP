@@ -1,20 +1,20 @@
-# 🗄️ SSMS - SQL Server Data Warehouse Schema
+# SSMS - SQL Server Data Warehouse Schema
 
-## 📌 Overview
+## Overview
 
 This section documents the **SQL Server schema design** and queries for the TMDB Movies Data Warehouse.  
 The design follows a **star schema** approach, where the **FactMovies** table stores measures (revenue, budget, ratings, popularity) and is connected to multiple **dimension tables**.
 
 ---
 
-## 📂 Files
+## Files
 
 - **SQLQuery.sql** → Scripts for creating schema, dimensions, and fact table
 - **SQLScript.txt** → Additional supporting SQL statements
 
 ---
 
-## ⭐ Schema Design
+## Schema Design
 
 **Fact Table**
 
@@ -36,15 +36,13 @@ This schema enables **OLAP-style queries** with SSAS cubes and BI dashboards.
 
 ---
 
-## 📷 Screenshots
-
 | Architecture                                               | ERD Diagram                                      | Fact Table                                             |
 | ---------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------ |
 | ![SSMS Architecture](../Assets/SSMS/SSMS_architecture.png) | ![SSMS Diagram](../Assets/SSMS/SSMS_diagram.png) | ![SSMS Fact Table](../Assets/SSMS/SSMS_Fact_table.png) |
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 1. Open **SQL Server Management Studio (SSMS)**.
 2. Connect to your SQL Server instance.
@@ -54,7 +52,7 @@ This schema enables **OLAP-style queries** with SSAS cubes and BI dashboards.
 
 ---
 
-## 📌 Example Queries
+## Example Queries
 
 ```sql
 -- Total Revenue by Genre
