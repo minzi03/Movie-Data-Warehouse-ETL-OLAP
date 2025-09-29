@@ -1,13 +1,13 @@
-# 🔄 SSIS - ETL Pipeline for TMDB Movies
+# SSIS - ETL Pipeline for TMDB Movies
 
-## 📌 Overview
+## Overview
 This folder contains the **SSIS (SQL Server Integration Services)** project that manages the **ETL (Extract – Transform – Load)** process for the TMDB Movies Data Warehouse.  
 
 The ETL workflow ensures that raw CSV/Excel data is properly cleaned, transformed, and loaded into the **star schema** in SQL Server for further OLAP analysis and reporting.
 
 ---
 
-## 📂 Files
+## Files
 - **SSIS_TMDBMovies.sln** → SSIS solution file  
 - **SSIS_TMDBMovies.dtproj** → SSIS project configuration  
 - **Project.params** → Project parameters (connection strings, file paths)  
@@ -16,7 +16,7 @@ The ETL workflow ensures that raw CSV/Excel data is properly cleaned, transforme
 
 ---
 
-## ⭐ ETL Process
+## ETL Process
 
 ### 1. Extract
 - Load raw data from CSV and Excel files:  
@@ -39,8 +39,6 @@ The ETL workflow ensures that raw CSV/Excel data is properly cleaned, transforme
 
 ---
 
-## 📷 Screenshots
-
 | Overview | Main Pipeline |
 |----------|---------------|
 | ![SSIS Overview](../Assets/SSIS/SSIS_1.png) | ![SSIS Main Pipeline](../Assets/SSIS/SSIS_pipeline_main.png) |
@@ -51,7 +49,7 @@ The ETL workflow ensures that raw CSV/Excel data is properly cleaned, transforme
 
 ---
 
-## 🚀 How to Run
+## How to Run
 1. Open **Visual Studio** with SQL Server Data Tools (SSDT).  
 2. Load `SSIS_TMDBMovies.sln`.  
 3. Configure **Project.params** (update connection managers with your SQL Server instance).  
@@ -60,7 +58,7 @@ The ETL workflow ensures that raw CSV/Excel data is properly cleaned, transforme
 
 ---
 
-## 📌 Example Transformations
+## Example Transformations
 - **Budget Correction** → Replace invalid values (< $10,000) with estimates  
 - **Runtime Filtering** → Remove unrealistic runtimes (> 300 mins or < 50 mins)  
 - **Genre Normalization** → Convert multiple genres into lookup IDs  
@@ -68,7 +66,7 @@ The ETL workflow ensures that raw CSV/Excel data is properly cleaned, transforme
 
 ---
 
-## ✅ Key Outcomes
+## Key Outcomes
 - Automated **data ingestion** from multiple sources  
 - Standardized and cleaned datasets for warehouse integration  
 - Successfully loaded data into **star schema**  
