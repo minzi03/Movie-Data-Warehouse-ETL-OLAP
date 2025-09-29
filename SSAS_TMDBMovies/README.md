@@ -1,12 +1,12 @@
-# 📦 SSAS - OLAP Cubes for TMDB Movies
+# SSAS - OLAP Cubes for TMDB Movies
 
-## 📌 Overview
+## Overview
 This folder contains the **SSAS (SQL Server Analysis Services)** project that builds the **OLAP cubes** for the TMDB Movies Data Warehouse.  
 The cube allows **multidimensional analysis** of movie data across genres, companies, countries, and time dimensions, supporting advanced reporting and decision-making.
 
 ---
 
-## 📂 Files
+## Files
 - **SSAS_TMDBMovies.sln** → SSAS solution file  
 - **SSAS_TMDBMovies.dwproj** → Project configuration  
 - **SSAS_TMDBMovies.database** → Deployment metadata  
@@ -18,7 +18,7 @@ The cube allows **multidimensional analysis** of movie data across genres, compa
 
 ---
 
-## ⭐ Cube Design
+## Cube Design
 
 ### Dimensions
 - **DimMovie** → Movie details  
@@ -40,7 +40,7 @@ The cube allows **multidimensional analysis** of movie data across genres, compa
 
 ---
 
-## 📜 Example OLAP Analysis
+## Example OLAP Analysis
 - Revenue by **Genre** across different **Decades**  
 - Average Rating by **Country of Production**  
 - Popularity trends by **Release Year**  
@@ -48,8 +48,6 @@ The cube allows **multidimensional analysis** of movie data across genres, compa
 - Top 10 Studios ranked by **Total Revenue**  
 
 ---
-
-## 📷 Screenshots
 
 | Architecture | Diagram | Dimensions |
 |--------------|---------|------------|
@@ -61,7 +59,7 @@ The cube allows **multidimensional analysis** of movie data across genres, compa
 
 ---
 
-## 🚀 How to Run
+## How to Run
 1. Open **Visual Studio** with SQL Server Data Tools (SSDT).  
 2. Load `SSAS_TMDBMovies.sln`.  
 3. Configure the **Data Source (`TMDB Movies.ds`)** to point to your SQL Server warehouse.  
@@ -71,7 +69,7 @@ The cube allows **multidimensional analysis** of movie data across genres, compa
 
 ---
 
-## 📌 Example MDX Queries
+## Example MDX Queries
 
 ```mdx
 -- Top 5 Genres by Total Revenue
