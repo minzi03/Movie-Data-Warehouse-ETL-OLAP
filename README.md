@@ -1,6 +1,6 @@
-# 🎥 Movie-Data-Warehouse-ETL-OLAP Project
+# Movie-Data-Warehouse-ETL-OLAP Project
 
-## 📌 Overview
+## Overview
 
 This project demonstrates the **end-to-end development of a Data Warehouse and OLAP solution** using the **TMDB Movies dataset**.
 It covers the full data pipeline:
@@ -16,7 +16,7 @@ This project was developed as part of the **Data Warehousing & OLAP (IS217)** co
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 minzi03-data-warehousing-and-olap/
@@ -35,7 +35,7 @@ minzi03-data-warehousing-and-olap/
 
 ---
 
-## 🗄️ SQL Server (SSMS)
+## SQL Server (SSMS)
 
 The **SQL Server Management Studio (SSMS)** was used to design and manage the **Data Warehouse schema**.
 
@@ -43,23 +43,19 @@ The **SQL Server Management Studio (SSMS)** was used to design and manage the **
 * **Entity-Relationship Diagram (ERD)**: Logical view of dimensions and fact table
 * **Fact Table**: Stores measures such as revenue, budget, ratings, and popularity
 
-### 📷 Screenshots
-
 | Architecture                                            | ERD Diagram                                   | Fact Table                                          |
 | ------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------- |
 | ![SSMS Architecture](Assets/SSMS/SSMS_architecture.png) | ![SSMS Diagram](Assets/SSMS/SSMS_diagram.png) | ![SSMS Fact Table](Assets/SSMS/SSMS_Fact_table.png) |
 
 ---
 
-## 🔄 ETL Process (SSIS)
+## ETL Process (SSIS)
 
 The **SSIS project (`SSIS_TMDBMovies`)** handles the ETL pipeline:
 
 * Extract raw data from CSV/Excel
 * Transform the data (cleaning, formatting, joining tables)
 * Load into the **star schema warehouse**
-
-### 📷 Screenshots
 
 | Overview                                 | Main Pipeline                                             |
 | ---------------------------------------- | --------------------------------------------------------- |
@@ -71,15 +67,13 @@ The **SSIS project (`SSIS_TMDBMovies`)** handles the ETL pipeline:
 
 ---
 
-## 📦 OLAP Cubes (SSAS)
+## OLAP Cubes (SSAS)
 
 The **SSAS project (`SSAS_TMDBMovies`)** builds OLAP cubes for multidimensional analysis.
 
 * **Cube**: `TMDB Movies.cube`
 * **Dimensions**: Movie, Genre, Company, Country, Language, Date, Runtime, Adult
 * **Measures**: Revenue, Budget, Vote Average, Popularity, Runtime
-
-### 📷 Screenshots
 
 | Architecture                                            | Diagram                                       | Dimensions                                          |
 | ------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------- |
@@ -91,7 +85,7 @@ The **SSAS project (`SSAS_TMDBMovies`)** builds OLAP cubes for multidimensional 
 
 ---
 
-## 📜 MDX Queries
+## MDX Queries
 
 File: **`MDXQuery.mdx`** contains sample OLAP queries, such as:
 
@@ -101,7 +95,7 @@ File: **`MDXQuery.mdx`** contains sample OLAP queries, such as:
 
 ---
 
-## 📑 Reporting with SSRS
+## Reporting with SSRS
 
 The **SSRS project (`SSRS_TMDBMovies`)** delivers interactive reports for decision-making.
 
@@ -109,22 +103,18 @@ The **SSRS project (`SSRS_TMDBMovies`)** delivers interactive reports for decisi
 * Top production studios
 * Popularity and ratings
 
-### 📷 Screenshots
-
 | Report 1                                       | Report 2                                       | Report 3                                       |
 | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
 | ![SSRS Report 1](Assets/SSRS/SSRS_report1.png) | ![SSRS Report 2](Assets/SSRS/SSRS_report2.png) | ![SSRS Report 3](Assets/SSRS/SSRS_report3.png) |
 
 ---
 
-## 📊 Reports & Dashboards
+## Reports & Dashboards
 
 In addition to SSRS, the project includes **Excel** and **Power BI** dashboards for business analysis.
 
 * **Excel Report**: Pivot-based analysis for quick insights
 * **Power BI Dashboard**: Interactive visuals for revenue, budget, ratings, and trends
-
-### 📷 Screenshots
 
 | Excel Report                                    | Power BI Dashboard                                   |
 | ----------------------------------------------- | ---------------------------------------------------- |
@@ -132,7 +122,7 @@ In addition to SSRS, the project includes **Excel** and **Power BI** dashboards 
 
 ---
 
-## 🤖 Data Mining: Movie Revenue Prediction
+## Data Mining: Movie Revenue Prediction
 
 As an extension, machine learning was applied to **predict movie revenues**.
 
@@ -156,7 +146,7 @@ As an extension, machine learning was applied to **predict movie revenues**.
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 * **SQL Server**: Database & schema
 * **SSMS**: Data modeling
@@ -168,7 +158,7 @@ As an extension, machine learning was applied to **predict movie revenues**.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. **SQL Scripts** → Run `SQLQuery.sql` to create schema.
 2. **ETL** → Open `SSIS_TMDBMovies.sln` and execute ETL pipeline.
@@ -179,12 +169,10 @@ As an extension, machine learning was applied to **predict movie revenues**.
 
 ---
 
-## 📌 Key Outcomes
+## Key Outcomes
 
 * Built a **complete Data Warehouse** with star schema
 * Automated **ETL pipeline with SSIS**
 * Created **OLAP cubes with SSAS** for multidimensional analysis
 * Developed **reports and dashboards** with SSRS, Excel, and Power BI
 * Extended with **Machine Learning (SVR model, 94% accuracy)**
-
-
