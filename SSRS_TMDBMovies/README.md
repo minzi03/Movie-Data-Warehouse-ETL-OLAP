@@ -1,12 +1,12 @@
-# 📑 SSRS - Reporting for TMDB Movies
+# SSRS - Reporting for TMDB Movies
 
-## 📌 Overview
+## Overview
 This folder contains the **SSRS (SQL Server Reporting Services)** project used to build reports and dashboards for the TMDB Movies Data Warehouse.  
 The reports are connected to the **SSAS OLAP cube** and allow interactive analysis of movie revenue, ratings, popularity, and production performance.  
 
 ---
 
-## 📂 Files
+## Files
 - **SSRS_TMDBMovies.sln** → SSRS solution file  
 - **SSRS_TMDBMovies.rptproj** → Report project configuration  
 - **SSRS_TMDBMovies.rptproj.rsuser** → User settings  
@@ -16,7 +16,7 @@ The reports are connected to the **SSAS OLAP cube** and allow interactive analys
 
 ---
 
-## ⭐ Key Reports
+## Key Reports
 1. **Revenue Distribution Report**  
    - Shows revenue trends by **genre**, **year**, and **decade**  
 
@@ -28,15 +28,13 @@ The reports are connected to the **SSAS OLAP cube** and allow interactive analys
 
 ---
 
-## 📷 Screenshots
-
 | Report 1 | Report 2 | Report 3 |
 |----------|----------|----------|
 | ![SSRS Report 1](../Assets/SSRS/SSRS_report1.png) | ![SSRS Report 2](../Assets/SSRS/SSRS_report2.png) | ![SSRS Report 3](../Assets/SSRS/SSRS_report3.png) |
 
 ---
 
-## 🚀 How to Run
+## How to Run
 1. Open **Visual Studio** with SQL Server Data Tools (SSDT).  
 2. Load `SSRS_TMDBMovies.sln`.  
 3. Configure the data source to connect to your **SSAS cube**.  
@@ -45,14 +43,14 @@ The reports are connected to the **SSAS OLAP cube** and allow interactive analys
 
 ---
 
-## 📌 Example Use Cases
+## Example Use Cases
 - Which genres generated the highest revenue in the 2010s?  
 - Which studios consistently deliver profitable movies?  
 - How do ratings and popularity correlate with revenue over time?  
 
 ---
 
-## ✅ Key Outcomes
+## Key Outcomes
 - Built **3 professional reports** for data-driven movie analysis  
 - Connected SSRS to **SSAS OLAP cube** for real-time queries  
 - Enabled stakeholders to **explore insights visually** without writing queries  
