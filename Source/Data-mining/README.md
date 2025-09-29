@@ -1,6 +1,4 @@
-# 🎬 Movie Revenue Prediction - Data Mining Project
-
-## Introduction
+# Movie Revenue Prediction - Data Mining
 
 This project focuses on analyzing and predicting box office revenues using machine learning and data analysis techniques. The main goal is to build a model that can accurately forecast a movie’s revenue based on relevant features.
 
